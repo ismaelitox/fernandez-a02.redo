@@ -1,0 +1,10 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ïüø¡8œï“™Õ/
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í‘—·8Ÿï“™Õ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(è—éÖûÿÿÿÿ8£ï“™Õ/
+j	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ”¬Ò8©ï“™Õ/
+Z	java:S106#"9Replace this use of System.out or System.err by a logger.(Šæ¦üÿÿÿÿ8®ï“™Õ/
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿–’ö8µï“™Õ/
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ–Òîøÿÿÿÿ8¸ï“™Õ/
+0
+java:S1220""Move this file to a named package.

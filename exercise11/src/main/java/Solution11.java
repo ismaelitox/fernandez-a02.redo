@@ -30,7 +30,7 @@ public class Solution11 {
         String getXRate = in.nextLine();
         return Double.parseDouble(getXRate);
     }
-    // Amount of Euro getter 
+    // Amount of Euro getter
     private static int Euro() {
         System.out.print("How many euros are you exchanging? ");
         String getEuro = in.nextLine();

@@ -3,48 +3,64 @@
  * Copyright 2021 Jonah Fernandez
  */
 
-import java.text.DecimalFormat;
+
+import java.text.MessageFormat;
+import java.text.NumberFormat;
 import java.util.Scanner;
+
 
 public class Solution14 {
     // Scanner Object
     private static final Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
+        NumberFormat numberFormat = NumberFormat.getCurrencyInstance();
         // Initialized getter methods
-        double orderAmount = orderAmount();
-        String state = isItWis();
+        int orderAmount = Integer.parseInt(Solution14.orderAmount());
+        String state = Solution14.isItWis();
 
-       // String wis = "WI";
         // If statement if input is wisconsin
         // Goes through tax math for wis
         // print statement within to print amount
-        if(state.equals("WI"))
-        {
+        if (!state.equals("WI")) {
+            // If any other state print normal amount
+            System.out.println(MessageFormat.format("The total is ${0}", orderAmount));
+        } else {
+            // Else Print the tax for wisconsin.
+            // Rates and Math
             double rate = 0.055;
-            System.out.println("The subtotal is $" + orderAmount);
             double tax = orderAmount * rate;
-            DecimalFormat format = new DecimalFormat("0.00");
-            System.out.println(format.format("The tax is" + tax));
+            // First initial print statement for subtotal
+            // No need for formatting of numbers
+            System.out.println(MessageFormat.format("The subtotal is ${0}", orderAmount));
+            // Otherwise needs formatting for proper print statement
+            var taxFormat = numberFormat.format(tax);
+            System.out.println(MessageFormat.format("The tax is {0}", taxFormat));
+            var total = numberFormat.format(tax + orderAmount);
+            System.out.println(MessageFormat.format("The total is {0}", total));
 
-        }
-        else{
-            // Else print normal amount
-            System.out.println("The total is $" + orderAmount);
         }
 
 
     }
     // Get method for State
-    private static  String isItWis() {
-        System.out.print("What is the state? ");
-        String state = in.next();
-        return state;
+    // Ensure that WI can be used as lower case input or not
+    // Will still convert to uppercase
+
+    public static String isItWis() {
+        System.out.print("What is the State? ");
+        String string = in.next();
+        string = string.toUpperCase();
+        return string;
 
     }
+
     // Get method for order amount
-    private static int orderAmount() {
-       System.out.print("What is the order amount? ");
-       return in.nextInt();
+
+    public static String orderAmount() {
+        System.out.print("What is the order amount? ");
+        return in.nextLine();
     }
+
+
 }

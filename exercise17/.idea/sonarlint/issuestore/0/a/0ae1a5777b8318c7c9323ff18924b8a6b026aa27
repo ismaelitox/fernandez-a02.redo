@@ -1,0 +1,16 @@
+
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(•îò´úÿÿÿÿ
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(–Žýà
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(õ ýïþÿÿÿÿ
+N	java:S106("9Replace this use of System.out or System.err by a logger.(§¸™à
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(Þ±ðŒÿÿÿÿÿ
+S	java:S106."9Replace this use of System.out or System.err by a logger.( ²„ÿüÿÿÿÿ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(ó¶¢Ãýÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.( ²„ÿüÿÿÿÿ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(åÖ»øþÿÿÿÿ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.( ²„ÿüÿÿÿÿ
+S	java:S106I"9Replace this use of System.out or System.err by a logger.( û÷œÿÿÿÿÿ
+Z	java:S106K"9Replace this use of System.out or System.err by a logger.( ²„ÿüÿÿÿÿ8ñù›ŸÖ/
+e	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã—¿
+0
+java:S1220""Move this file to a named package.
